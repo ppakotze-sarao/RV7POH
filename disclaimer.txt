@@ -1,0 +1,50 @@
+\chapter{Disclaimer}
+\thispagestyle{fancy}
+\minitoc[n] % Creating an actual minitoc
+
+\section{Weight Limits}
+  \begin{tabularx}{\linewidth}{
+    >{\hsize=0.5\hsize}X
+     >{\hsize=0.5\hsize}X
+  }
+  %\begin{tabular}{ p{3.25in} p{3.25in} }
+
+
+RV - 7	 
+"Solo Weight &1400 lbs\\
+Gross Weight &1800 lbs"	200 hp\\
+"Speeds and ranges in statute mph (sm)
+Empty weight and performance measured with Hartzell 2 Blade C/S prop"	
+ 	
+Speed - Solo Weight	
+Top Speed	&217 mph\\
+Cruise [75% @ 8000 ft]	&207 mph\\
+Cruise [55% @ 8000 ft]	&187 mph\\
+Stall Speed	&51 mph\\
+ 	
+Speed - Gross Weight	
+Top Speed	&216 mph\\
+Cruise [75% @ 8000 ft]	&206 mph\\
+Cruise [55% @ 8000 ft]	&186 mph\\
+Stall Speed	&58 mph\\
+ 	
+Ground Performance - Solo Weight	
+Takeoff Distance	&250 ft\\
+Landing Distance	&350 ft\\
+ 	
+Ground Performance - Gross Weight	
+Takeoff Distance	&500 ft\\
+Landing Distance	&500 ft\\
+ 	
+Climb/Ceiling - Solo Weight	
+Rate of Climb	&2,550 fpm\\
+Ceiling	&25,500 ft\\
+ 	
+Climb/Ceiling - Gross Weight	
+Rate of Climb	&1,900 fpm\\
+Ceiling	&22,500 ft\\
+ 	
+Range	
+Range [75% @ 8000 ft]	&765 sm\\
+Range [55% @ 8000 ft]	&935 sm\\
+\end{tabularx}

@@ -1,0 +1,80 @@
+\documentclass[10pt,openany]{book}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{lmodern}
+\usepackage{rotating}
+
+%\usepackage[pdftex]{color}
+%\usepackage[final]{pdfpages}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+
+\usepackage{minitoc}\usepackage{minitoc} 
+\renewcommand{\mtifont}{\large\sffamily}
+\renewcommand{\mtcfont}{\small\sffamily}
+\renewcommand{\mtcSfont}{\small\sffamily}
+\renewcommand{\mtcSSfont}{\small\sffamily}
+\renewcommand{\mtcSSSfont}{\small\sffamily}
+
+%\renewcommand{\familydefault}{lmodern}
+
+\usepackage[a5paper,bindingoffset=0.2in,%
+            left=0.75in, right=0.5in, top=0.75in,bottom=1.0in,
+            footskip=.5in, headheight = 1in]{geometry}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\leftmark }   %was \leftmark {Section number\\Section Title}
+\fancyhead[RE,LO]{\bfseries Van's Aircraft\\RV7} %manufacturer masthead nextline and airplane model series
+\fancyfoot[LE,RO]{\thepage} %section number - page number
+\fancyfoot[RE,LO]{\today}  %original issuer or date of revision
+
+
+\usepackage[auto]{chappg}
+\usepackage[ddmmyyyy]{datetime} 
+\usepackage[english]{babel}
+\addto\captionsenglish{\renewcommand{\chaptername}{Section}}  
+
+%this calls chapters sections as gama likes it
+\setcounter{secnumdepth}{0}  %this avoids numbering underneath sections eg. 3.1.1
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%\title{'RV-7 POH'}
+%\author{P.P.A. Kotze}
+
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+
+
+\begin{document}
+%\includepdf[pages=-,nup=1x2,landscape,signature=explain]{/home/pkotze/RV7POH/zuwab.pdf}
+
+\dominitoc% Initialization
+\pagenumbering{Roman}
+\include{coverpage}
+\include{disclaimer}  %one page performance specifications
+\include{revisions}  %Added from GAMA spec
+\include{tableoc}
+\pagenumbering{arabic}
+\pagenumbering{bychapter}
+\include{general}
+\include{limitations}
+\include{emergencies}
+\include{normal}
+\include{performance}
+\include{weightandbalance}
+\include{systems}
+\include{maintenance}
+%\include{supplements}
+\end{document}
+\grid
