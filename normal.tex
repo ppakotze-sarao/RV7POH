@@ -97,6 +97,8 @@
   \item Avionics -- OFF
 \end{enumerate}
 
+% DMW comment: THis is pretty aggressive. Bulldog uses 1/4 throttle and pulse fuel pump
+% We may need to experiment a bit but my gut thinks 3-5s of fuel pump priming is a looong time.
 \section{Priming the Engine}
 \begin{enumerate}[(1)]
   \item Propellor -- FINE
@@ -111,7 +113,7 @@
   \item Fuel pump -- OFF
 \end{enumerate}
 
-\section{Starting Engine}
+\section{Starting Engine (Cold)}
 \begin{enumerate}[(1)]
   \item Prime -- AS REQUIRED
   \item Throttle -- OPEN 1/4 TRAVEL
@@ -119,7 +121,20 @@
   \item Mixture -- FULL RICH (slowly and smoothly)
   \item Throttle -- SET 1000 RPM
   \item Oil Pressure -- CHECK (stop if not green in 30s)
-  \item Ammeter -- CHARGING
+  \item Ammeter -- ON AND CHARGING
+  \item Mixture -- LEAN (for taxi)
+  \item Avionics -- ON 
+\end{enumerate}
+
+\section{Starting Engine (Hot)}
+\begin{enumerate}
+  \item Mixture -- FULL LEAN
+  \item Throttle -- FULL OPEN
+  \item Inition -- ON
+  \item Ignition Switch -- START (release when engine starts)
+  \item Mixture -- FULL RICH (slowly and smoothly)
+  \item Throttle -- CLOSE AND SET 1000 RPM
+  \item Ammeter -- ON AND CHARGING
   \item Mixture -- LEAN (for taxi)
   \item Avionics -- ON 
 \end{enumerate}
@@ -129,7 +144,7 @@
   \item Aircraft -- Into Wind
   \item Mixture -- RICH
   \item Propellor -- FINE
-  \item Throttle -- SET 1000-1200 RPM (less than 2200 RPM on ground) 
+  \item Throttle -- SET 1000-1200 RPM (less than 2200 RPM on ground)
 \end{enumerate} 
 
 %\begin{center}
@@ -149,6 +164,7 @@
   \item Propellor -- CYCLE x 3 (Avoid more than 500 RPM drop)
   \item Throttle -- SET 1800 RPM (50-65\% power)
   \item Magneto -- CHECK (175 drop 50 RPM difference)
+  \item Alternate air -- Check for RPM drop on activation
   \item Engine instruments and Ammeter -- CHECK 
   \item Flights Instruments and Radios -- SET
   \item Beacon, Navigation lights -- ON (as required)
@@ -168,7 +184,7 @@ Any ground check that requires full throttle operation must be limited to three 
   \item Throttle -- OPEN 
   \item Mixture -- RICH (lean for field elevation)
   \item Rotate -- 70 KIAS
-  \item Climb Speed -- $V_Y$ 104 KIAS 
+  \item Climb Speed -- $V_y$ 104 KIAS 
 \end{enumerate}
 \subsection{Maximum Performance Take Off}
 \begin{enumerate}[(1)]
@@ -178,7 +194,7 @@ Any ground check that requires full throttle operation must be limited to three 
   \item Mixture -- RICH (lean for field elevation)
   \item Brakes -- RELEASE
   \item Rotate -- 55 KIAS
-  \item Climb Speed -- $V_X$ 74 KIAS 
+  \item Climb Speed -- $V_x$ 74 KIAS 
   \item Wing Flaps -- RETRACT after reaching 74 KIAS
 \end{enumerate}
 \begin{center}
@@ -189,7 +205,7 @@ Do not reduce power until wing flaps have been retracted.
 
 \section{Enroute Climb}
 \begin{enumerate}[(1)]
-  \item Airspeed -- $V_Y$ 104 KIAS or higher
+  \item Airspeed -- $V_y$ 104 KIAS or higher
   \item Power -- 25 INCHES or FULL THROTTLE and 2500rpm 
   \item Mixture -- LEAN as required
 \end{enumerate}
