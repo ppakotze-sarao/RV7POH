@@ -11,32 +11,32 @@
      >{\hsize=0.6\hsize}X|
      >{\hsize=0.2\hsize}X| 
 } 
- \hline
+ \hline % These need to be measured for this aircraft
   Symbol & Description &  Airspeed \\ 
  \hline
- $V_{R}$ & Take off rotate speed & 70 kt\\ 
+ $V_{r}$ & Take off rotate speed & 70 kt\\ 
  \hline
- $V_{X}$ & Best angle of climb & 74 kt  \\ 
+ $V_{x`}$ & Best angle of climb & 74 kt  \\ 
  \hline
- $V_{Y}$ & Best rate of climb & 104 kt \\ 
+ $V_{y}$ & Best rate of climb & 104 kt \\ 
   \hline 
-  $V_{FE}$ & Maximum full flap speed & 87 kt\\ 
+  $V_{fe}$ & Maximum full flap speed & 87 kt\\ 
  \hline 
-  $V_{FE20}$ & Maximum 20$^{\circ}$ flap speed & 96 kt\\ 
+  $V_{fe20}$ & Maximum 20$^{\circ}$ flap speed & 96 kt\\ 
 \hline
- $V_{A}$ & Turbulent air operating speed & 123 kt\\ 
+ $V_{a}$ & Turbulent air operating speed & 123 kt\\ 
  \hline
- $V_{NO}$ & Turbulent air operating speed & 168 kt\\ 
+ $V_{no}$ & Turbulent air operating speed & 168 kt\\ 
  \hline
- $V_{NE}$ & Never exceed speed & 200 kt\\ 
+ $V_{ne}$ & Never exceed speed & 200 kt\\ 
  \hline
- $V_{REF}$ & Landing final approach full flap & 70 kt\\ 
-% \hline
-% $V_{Glide}$ & Best glide & 78 kt\\ 
+ $V_{ref}$ & Landing final approach full flap & 70 kt\\ 
  \hline
- $V_{S}$ & Stall flapless  & 56 kt \\ 
+ $V_{gl}$ & Best glide & 78 kt\\ 
  \hline
- $V_{SO}$ & Stall full flap & 51 kt\\ 
+ $V_{s}$ & Stall flapless  & 56 kt \\ 
+ \hline
+ $V_{so}$ & Stall full flap & 51 kt\\ 
  \hline
 \end{tabularx}
 \end{table}
@@ -54,6 +54,7 @@
 \begin{enumerate}[(1)]
 \item Master and EFIS -- ON
 \item Fuel gauges -- CHECK
+\item Flaps -- EXTEND FULLY
 \item Master and EFIS -- OFF
 \end{enumerate} 	
 \circled{2}
@@ -87,6 +88,7 @@
 \item Rear Empennage Fairing -- CHECK
 \item Elevator -- CHECK
 \item Rudder -- CHECK
+\item Tail wheel -- CHECK
 \end{enumerate}
 
 \section{Before Starting the Engine}
@@ -95,9 +97,10 @@
   \item Alternate air -- OFF (Emergency use only)
   \item Brakes -- Test
   \item Avionics -- OFF
+  \item Flaps -- RETRACT IN STAGES ($20^\circ, 10^\circ, 0^\circ)
 \end{enumerate}
 
-\section{Priming the Engine}
+\section{Priming the Engine (Cold Engines Only)}
 \begin{enumerate}[(1)]
   \item Propellor -- FINE
   \item Fuel valve -- SELECT
@@ -105,13 +108,13 @@
   \item EFIS -- ON
   \item Fuel pump -- ON
   \item Throttle -- OPEN FULL
-  \item Mixture -- FULL RICH (Until steady fuel flow for 3-5s)
+  \item Mixture -- ADVANCE TO FULL RICH (Until slow but steady fuel flow achieved for 3-5s)
   \item Throttle -- CLOSED
   \item Mixture -- IDLE CUT OFF
   \item Fuel pump -- OFF
 \end{enumerate}
 
-\section{Starting Engine}
+\section{Starting Engine (Cold)}
 \begin{enumerate}[(1)]
   \item Prime -- AS REQUIRED
   \item Throttle -- OPEN 1/4 TRAVEL
@@ -119,7 +122,20 @@
   \item Mixture -- FULL RICH (slowly and smoothly)
   \item Throttle -- SET 1000 RPM
   \item Oil Pressure -- CHECK (stop if not green in 30s)
-  \item Ammeter -- CHARGING
+  \item Ammeter -- ON AND CHARGING
+  \item Mixture -- LEAN (for taxi)
+  \item Avionics -- ON 
+\end{enumerate}
+
+\section{Starting Engine (Hot)}
+\begin{enumerate}
+  \item Mixture -- FULL LEAN
+  \item Throttle -- FULL OPEN
+  \item Inition -- ON
+  \item Ignition Switch -- START (release when engine starts)
+  \item Mixture -- FULL RICH (slowly and smoothly)
+  \item Throttle -- CLOSE AND SET 1000 RPM
+  \item Ammeter -- ON AND CHARGING
   \item Mixture -- LEAN (for taxi)
   \item Avionics -- ON 
 \end{enumerate}
@@ -129,7 +145,7 @@
   \item Aircraft -- Into Wind
   \item Mixture -- RICH
   \item Propellor -- FINE
-  \item Throttle -- SET 1000-1200 RPM (less than 2200 RPM on ground) 
+  \item Throttle -- SET 1000-1200 RPM (less than 2200 RPM on ground)
 \end{enumerate} 
 
 %\begin{center}
@@ -149,6 +165,7 @@
   \item Propellor -- CYCLE x 3 (Avoid more than 500 RPM drop)
   \item Throttle -- SET 1800 RPM (50-65\% power)
   \item Magneto -- CHECK (175 drop 50 RPM difference)
+  \item Alternate air -- Check for RPM drop on activation
   \item Engine instruments and Ammeter -- CHECK 
   \item Flights Instruments and Radios -- SET
   \item Beacon, Navigation lights -- ON (as required)
@@ -168,17 +185,17 @@ Any ground check that requires full throttle operation must be limited to three 
   \item Throttle -- OPEN 
   \item Mixture -- RICH (lean for field elevation)
   \item Rotate -- 70 KIAS
-  \item Climb Speed -- $V_Y$ 104 KIAS 
+  \item Climb Speed -- $V_y$ 104 KIAS 
 \end{enumerate}
 \subsection{Maximum Performance Take Off}
 \begin{enumerate}[(1)]
-  \item Wing Flaps -- 15$^{\circ}$
+  \item Flaps -- 15$^{\circ}$
   \item Brakes -- APPLY
   \item Throttle -- FULL THROTTLE  
   \item Mixture -- RICH (lean for field elevation)
   \item Brakes -- RELEASE
   \item Rotate -- 55 KIAS
-  \item Climb Speed -- $V_X$ 74 KIAS 
+  \item Climb Speed -- $V_x$ 74 KIAS 
   \item Wing Flaps -- RETRACT after reaching 74 KIAS
 \end{enumerate}
 \begin{center}
@@ -189,7 +206,7 @@ Do not reduce power until wing flaps have been retracted.
 
 \section{Enroute Climb}
 \begin{enumerate}[(1)]
-  \item Airspeed -- $V_Y$ 104 KIAS or higher
+  \item Airspeed -- $V_y$ 104 KIAS or higher
   \item Power -- 25 INCHES or FULL THROTTLE and 2500rpm 
   \item Mixture -- LEAN as required
 \end{enumerate}
@@ -248,7 +265,7 @@ Prior to take off from fields above 3000 ft elevation the mixture should be lean
 
 
 \subsection{Wing flap settings}
-When flap is needed to shorten take off runs, no more than 15$^{\circ}$ is suggested.
+Check that the flaps are retracted evenly. When flap is needed to shorten take off runs, no more than 15$^{\circ}$ is suggested.
 
 \subsection{Enroute climb}
 Normal climbs are performed with the flaps retracted and the airspeed 5 to 15 kt faster than best rate of climb speed.  Power selected should not be less dan 25" MAP and 2500 rpm. Full throttle climb at 2400 RPM and higher is allowed. 
@@ -310,13 +327,11 @@ Letdown speed should not exceed high cruise speed or approximately 1,000 feet pe
 
 The mixture setting also has an effect on engine cooling. To reduce spark plug fouling and keep the cylinder cooling within the recommended 50${^\circ}$F per-minute limit, the mixture should be left at the lean setting used for cruise and then richened gradually during the descent from altitude. The lean mixture, maintaining some power and using a sensible airspeed should achieve the most efficient engine temperatures possible.
 
-
-
 \subsection{Crosswind Landing }
-When landing in a crosswind, use the minumum flap setting required for the field length available.
+When landing in a crosswind, use the minimum flap setting required for the field length available.
 
 \subsection{Go-around }
-In a go-aroud, apply full throttle and 2700 RPM smoothly.  Reduce wing flaps promptly to climb setting.   Upon reaching a safe airspeed with positive rate of climb flaps should be retracted fully.
+In a go-aroud, apply full throttle and 2700 RPM smoothly using fine pitch.  Reduce wing flaps promptly to climb setting.   Upon reaching a safe airspeed with positive rate of climb flaps should be retracted fully.
 
 \subsection{Cold Weather Operation}
 Prior to starting in cold temperatures it is advisable to pull the propeller through several times.  
