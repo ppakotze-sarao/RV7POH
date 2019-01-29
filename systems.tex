@@ -140,9 +140,11 @@ as listed in the equipment section.
 
 \section{Instruments}
 The aircraft is fitted with a MGL Odyssey EFIS system as its Primary Flight Display and Engine
-Management System. The EFIS unit is powered from a dedicated power switch on the instrument panel.  
+Management System. 
 
-A system backup battery is mounted behind the EFIS display and is able to hold configuration data only.  
+The EFIS unit is powered from the main bus with a dedicated power switch on the instrument panel.  In addition a standalone EFIS backup battery is installed powered by a separate power switch on the instrument panel.  Standard procedure would be to power the EFIS via the EFIS backup battery to verify its state of charge before turning on the unit via the main bus.  The EFIS Backup Battery should be left on during flight to allow charging via the main bus.
+
+A system memory backup battery is mounted behind the EFIS display and is able to hold configuration data only.  Configuration data is not stored when this battery is removed.
 
 The MGL RDAC engine module is mounted forward of the firewall under the engine cowl and provides the interface between the EFIS and the engine. 
 
@@ -151,7 +153,38 @@ The MGL magnetometer is mounted behind the baggage area bulkhead.
 
 Outside Air Temperature is obtained from a sensor mounted on the left bottom cockpit behind the pilot rudder pedals.
 
-A standby analogue airspeed indicator and altimeter are fitted for redundancy.
+A standby analogue airspeed indicator and altimeter are fitted for redundancy.  An Airpath magnetic compass is fitted to the windscreen support bar in full view from pilot or co-pilot position.
+
+The MGL EFIS provides the following engine and flight instruments:
+\subsubsection{Engine monitoring}
+  \begin{tabularx}{\linewidth}{
+    >{\hsize=0.4\hsize}X
+    >{\hsize=0.6\hsize}X  }
+Left tank level: & Fuel quantity [liters]\\
+Right tank level: & Fuel quanitity [liters]\\
+Total fuel level: & Calculated [liters]\\
+Fuel pressure: & Output of engine pump [psi]\\
+Cylinder Heat Temperature: & CHT1-4 [F]\\
+Exhaust Gas Temperature: & EGT1-4 [F]\\
+Oil temperature: & [F]\\
+Oil pressure: & [psi]\\
+Manifold pressure: & MAP ["Hg]\\
+Engine speed: & RPM \\
+Fuel flow: & Liters/hour [l/h]\\
+\end{tabularx}
+
+\subsubsection{Flight monitoring}
+  \begin{tabularx}{\linewidth}{
+    >{\hsize=0.4\hsize}X
+    >{\hsize=0.6\hsize}X  }
+Airspeed: & Knots\\
+Attitude indicator: & Roll, Pitch\\
+Altitude: & feet\\
+Turn and slip indicator: & \\
+Heading indicator: & Magnetic heading\\
+Vertical speed indicator: & ft/min\\
+Angle of attack: & \\
+\end{tabularx}
 
 \section{Avionics}
 The following aircraft avionics is fitted and powered once the avionics switch is on:
@@ -159,9 +192,53 @@ The following aircraft avionics is fitted and powered once the avionics switch i
 \item The GARMIN GX 327 is a mode C transponder.
 \item MGL V6 COM radio
 \item Microair COM radio
+\item Flightcom 403mc Intercom 
+\item MGL V6 COM radio 1
+\item Microair M760 COM radio 2
+\item MGL N16 NAV radio 1
+\item GARMIN GTX327 transponder
 \end{itemize}
 
 A GPS antenna is mounted on top of the engine mount underneath the top engine cowl.  
+
+\section{Equipment list}
+A summary of the installed equipment is provided in Table ~\ref{tab:eq_list}.  
+
+\begin{table}[H]
+\caption{Equipment list}
+\label{tab:eq_list}
+\begin{tabularx}{\linewidth}{
+    |>{\hsize=0.1\hsize}X| 
+     >{\hsize=0.7\hsize}X|
+     >{\hsize=0.2\hsize}X| 
+     } 
+\hline
+{Item no.}      &Item &Build \\
+\hline
+1 &Magnetic compass & \\
+\hline
+2 &UMA Airspeed indicator & \\
+\hline
+3 &UMA Altitude indicator & \\
+\hline
+4 &MGL Odyssey EFIS G2 &A3007 \\
+\hline
+&MGL SP-2 Magnetometer & \\
+\hline
+&MGL SP-7 AHRS & \\
+\hline
+5 &Flightcom 403mc Intercom & \\
+\hline
+6 &MGL V6 COM radio 1 & \\
+\hline
+7 &Microair M760 COM radio 2 & \\
+\hline
+8 &GARMIN GTX327 transponder & \\
+\hline
+9 &MGL N16 NAV radio 1 & \\
+\hline
+\end{tabularx}
+\end{table}
 
 \section{Heating and Ventilation}
 Cabin heat is provided via a heat muff attached to the exhaust system and fed with high-pressure air from the front

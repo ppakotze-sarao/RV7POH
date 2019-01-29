@@ -8,7 +8,7 @@ This section describes the procedure for establishing the basic empty weight and
 It should be noted that specific information regarding the weight, arm, moment and installed equipment list for this airplane can only be found in the appropriate weight and balance records.
 
 \section{Airplane weighing procedures}
-The airplane should be weighed in the empty condition and in a level attitude.  Scale should be placed simultaneously under both main wheels and the tail wheel as shown in Figure~\ref{fig:wandb}.
+The airplane should be weighed in the empty condition and in a level attitude.  Scales should be placed simultaneously under both main wheels and the tail wheel as shown in Figure~\ref{fig:wandb}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth]{wandb.eps}
@@ -54,7 +54,7 @@ The maximum weight and Centre of Gravity limits for both the Aerobatic and Norma
 \end{table}
 
 \subsection{Sample loading problems}
-The following example in Table~\ref{tab:gross} shows the aircraft loaded to the maximum weight of 1800 lbs.  This is achieved by loading full fuel and the full 100 lbs baggage allowance.  A standard 170 lbs pilot and 170 lbs passenger occupy the seats.
+The following example in Table~\ref{tab:gross} shows the aircraft loaded to the maximum weight of 1800 lbs.  This is achieved by loading full fuel and 85lbs of the full 100 lbs baggage allowance.  A standard 170 lbs pilot and 170 lbs passenger occupy the seats.
 
 \begin{table}[H]
 \caption{Gross weight Sample loading problem}
@@ -69,17 +69,17 @@ The following example in Table~\ref{tab:gross} shows the aircraft loaded to the 
  \hline
   Item & Weight [lbs]& Arm [inch] & Moment \newline [inch-.lbs] \\ 
  \hline
- Aircraft & 1108 & 79.06 & 87836 \\ 
+ Aircraft & 1122 & 79.14 & 88799.05 \\ 
  \hline
- Fuel (42Us Gal) & 252 & 80 & 20160 \\ 
+ Fuel (42Us Gal) & 252 & 80 & 20160.00 \\ 
  \hline
- Pilot & 170 & 97.48 & 16572 \\ 
+ Pilot & 170 & 97.48 & 16571.60 \\ 
  \hline
- Passenger & 170 & 97.48 & 16572 \\ 
+ Passenger & 170 & 97.48 & 16571.60 \\ 
  \hline
- Baggage (100 lbs) & 100 & 126.78 & 12678 \\ 
+ Baggage (100 lbs max) & 85 & 126.78 & 10766.30 \\ 
  \hline
- Total (1800 lbs)& 1800 & 85.45 & 153818 \\ 
+ Total (1800 lbs)& 1799 & 85.45 & 152878.55 \\ 
  \hline
 \end{tabularx}
 \end{table}
@@ -99,22 +99,22 @@ The second example in Table~\ref{tab:aerobatic} shows the aircraft loaded within
  \hline
   Item & Weight [lbs]& Arm [inch] & Moment \newline [inch-.lbs] \\ 
  \hline
- Aircraft & 1108 & 79.06 & 87836 \\ 
+ Aircraft & 1122 & 79.14 & 88799.05 \\ 
  \hline
- Fuel (21 Us Gal) & 125 & 80 & 10000 \\ 
+ Fuel (21 Us Gal) & 126 & 80 & 10080.00 \\ 
  \hline
- Pilot & 170 & 97.48 & 16572 \\ 
+ Pilot & 170 & 97.48 & 16571.60 \\ 
  \hline
- Passenger & 170 & 97.48 & 16572 \\ 
+ Passenger & 170 & 97.48 & 16571.60 \\ 
  \hline
  Baggage (100 lbs) & --- & 126.78 & --- \\ 
  \hline
- Total (1800 lbs)& 1573 & 83.3 & 130980 \\ 
+ Total (1800 lbs)& 1588 & 83.14 & 132022.25 \\ 
  \hline
 \end{tabularx}
 \end{table}
 
-Figure ~\ref{fig:coglimits} shows the centre of gravity limits plotted graphically.  The Normal category operation envelope is plotted with a solid blue line.  The Aerobatic operation envelope is plotted iwth a dashed blue line.  The gross weight sample is plotted as a solid dot and the aerobatic weight sample is plotted as a plus sign.
+Figure ~\ref{fig:coglimits} shows the centre of gravity limits plotted graphically.  The Normal category operation envelope is plotted with a solid blue line.  The Aerobatic operation envelope is plotted with a dashed blue line.  The gross weight sample is plotted as a solid dot and the aerobatic weight sample is plotted as a plus sign.
 
 \begin{figure}[H]
 \centering
@@ -137,7 +137,7 @@ A blank table is provided in Table~\ref{tab:worksheet} to calculate the specific
  \hline
   Item & Weight [lbs]& Arm [inch] & Moment \newline [inch-.lbs] \\ 
  \hline
- Aircraft & ... & ...&... \\ 
+ Aircraft & 1122 & 79.14 & 88799.05 \\ 
  \hline
  Fuel (42Us Gal) & ... & 80 &... \\ 
  \hline
@@ -152,39 +152,3 @@ A blank table is provided in Table~\ref{tab:worksheet} to calculate the specific
 \end{tabularx}
 \end{table}
 
-\section{Equipment list}
-\begin{table}[H]
-\caption{Equipment list}
-\label{tab:eq_list}
-\begin{tabularx}{\linewidth}{
-    |>{\hsize=0.05\hsize}X| 
-     >{\hsize=0.55\hsize}X|
-     >{\hsize=0.2\hsize}X| 
-     >{\hsize=0.1\hsize}X| 
-     >{\hsize=0.1\hsize}X|  
-     } 
-\hline
-{Item no.}      &Item &Build &Weight & Arm\\
-\hline
-1 &MGL Odyssey EFIS G2 &A3007 & &\\
-\hline
-&MGL SP-2 Magnetometer & & &\\
-\hline
-&MGL SP-7 AHRS & & &\\
-\hline
-2 &Flightcom 403mc Intercom & & &\\
-\hline
-3 &MGL V6 COM radio 1 & & &\\
-\hline
-4 &Microair M760 COM radio 2 & & &\\
-\hline
-5 &GARMIN GTX327 transponder & & &\\
-\hline
-6 &UMA Airspeed indicator & & &\\
-\hline
-7 &UMA Altitude indicator & & &\\
-\hline
-8 &MGL N16 NAV radio 1 & & &\\
-\hline
-\end{tabularx}
-\end{table}
