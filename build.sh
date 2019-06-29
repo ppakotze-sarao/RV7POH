@@ -1,9 +1,14 @@
 #!/bin/sh
 
-# Build twice to resolve cross references
-pdflatex --output-directory=build zuwab.tex 
-pdflatex --output-directory=build zuwab.tex 
+# Build twice to resolve cross references for electronic document
+pdflatex --output-directory=temp zuwab.tex 
+pdflatex --output-directory=temp zuwab.tex 
+mv temp/zuwab.pdf .
+
+# Build printable book
+pdflatex --output-directory=temp zuwab-book.tex
+mv temp/zuwab-book.pdf .
 
 # Cleanup
-rm build/*.aux build/*.log build/*.mtc* build/*.toc build/*.maf
+rm temp/*
 
