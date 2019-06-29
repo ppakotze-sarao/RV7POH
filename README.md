@@ -3,7 +3,6 @@
 Here is everything you need to know about flying ZU-WAB. The document is written in TeX so it does need to be
 built. The recommended configuration is to use [TeX Live](https://www.tug.org/texlive/) with the provided 
 build script. Simply run the buider script as follows:
-
 ```bash
 ./build.sh
 ```
