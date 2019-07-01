@@ -50,6 +50,27 @@ Takeoff distance given below are in standard conditions and optimum pilot techni
  \end{tabularx}
 \end{table}
 
+\section{Landing Distance}	
+Landing distance given below are in standard conditions and optimum pilot technique.
+
+\begin{table}[h]
+\caption{Landing Distance}
+\label{tab:landing_dist}
+  \begin{tabularx}{\linewidth}{
+    |>{\hsize=0.2\hsize}X| 
+     >{\hsize=0.6\hsize}X|
+     >{\hsize=0.2\hsize}X| 
+} 
+ \hline
+ Description & Weight &  Distance\\ 
+ \hline
+ Solo Weight  & 1400 lbs  & 350 ft \\ 
+ \hline
+ Gross Weight  & 1800 lbs & 500 ft\\ 
+ \hline
+\end{tabularx}
+\end{table}
+
 \section{Rate of Climb}
 Rate of Climb values given below are in standard conditions and optimum pilot technique.
 
@@ -68,31 +89,6 @@ Rate of Climb values given below are in standard conditions and optimum pilot te
  \hline
  Gross Weight  & 1800 lbs & 1900 fpm\\ 
  \hline
-\end{tabularx}
-\end{table}
-
-
-
-\section{Cruise performance}
-Cruise performance values given below is based on engine power settings alone.  Actual power settings depends on environment and altitude of operation.
-\begin{table}[h]
-\caption{Operating conditions}
-\label{tab:performance}
-  \begin{tabularx}{\linewidth}{
-    |>{\hsize=0.4\hsize}X| 
-     >{\hsize=0.2\hsize}X|
-     >{\hsize=0.2\hsize}X| 
-     >{\hsize=0.2\hsize}X| 
-} 
-\hline
-& RPM & Fuel Flow Gal/Hr. & Oil Use \newline Qts./Hr. \\
-\hline
-Normal Rated \newline 200 HP & 2700 & ----- &.89 \\
-\hline
-Performance Cruise \newline  (75\% Rated) 150 HP & 2450 (23")&  12.3 (47$\ell$/h)  & .50 \\
-\hline
-Economy Cruise \newline (65\% Rated) 130 HP &  2350 (21") &  9.5 (36 $\ell$/h)&.44 \\
-\hline
 \end{tabularx}
 \end{table}
 
@@ -122,27 +118,40 @@ The fuel consumption for either best power or best economy settings are provided
 \begin{figure}[H]
 \centering
 \includegraphics[height=0.75\textheight]{IO360-A1B6.eps}
-\caption{Fuel consumption for Best Power and Best Economy setting}
+\caption{Fuel consumption for Best Power and Best Economy setting. See the IO360 operators manual (Lycoming part no 60297-12) pg 52.}
 \label{fig:fuelflow}
 \end{figure}
 
-\section{Landing Distance}	
-Landing distance given below are in standard conditions and optimum pilot technique.
 
+\section{Cruise performance}
+Cruise performance values given below is based on engine power settings alone.  Actual power 
+settings depends on environment and altitude of operation. For detailed power settings, please
+see Figure \ref{fig:engineperf}.
 \begin{table}[h]
-\caption{Landing Distance}
-\label{tab:landing_dist}
+\caption{Operating conditions}
+\label{tab:performance}
   \begin{tabularx}{\linewidth}{
-    |>{\hsize=0.2\hsize}X| 
-     >{\hsize=0.6\hsize}X|
+    |>{\hsize=0.4\hsize}X| 
+     >{\hsize=0.2\hsize}X|
+     >{\hsize=0.2\hsize}X| 
      >{\hsize=0.2\hsize}X| 
 } 
- \hline
- Description & Weight &  Distance\\ 
- \hline
- Solo Weight  & 1400 lbs  & 350 ft \\ 
- \hline
- Gross Weight  & 1800 lbs & 500 ft\\ 
- \hline
+\hline
+& RPM & Fuel Flow Gal/Hr. & Oil Use \newline Qts./Hr. \\
+\hline
+Normal Rated \newline 200 HP & 2700 & 15.4(58.3$\ell$/h) &.89 \\
+\hline
+Performance Cruise \newline  (75\% Rated) 150 HP & 2450 (23")&  12.3 (47$\ell$/h)  & .50 \\
+\hline
+Economy Cruise \newline (65\% Rated) 130 HP &  2350 (21") &  9.5 (36 $\ell$/h)&.44 \\
+\hline
 \end{tabularx}
 \end{table}
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[height=0.9\textheight]{power-settings.png}
+  \caption{Engine performance chart from the IO360 operators manual (Lycoming part no 60297-12) pg 68.}
+  \label{fig:engineperf}
+\end{figure}
+
