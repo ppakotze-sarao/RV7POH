@@ -201,6 +201,60 @@ The following aircraft avionics is fitted and powered once the avionics switch i
 
 A GPS antenna is mounted on top of the engine mount underneath the top engine cowl.  
 
+\subsubsection{MGL NAV receiver operation}
+The MGL remote mount NAV receiver functions are accessed via the MGL Odyssey EFIS.  Once selected the NAV receiver can be set to either NORMAL or SETUP mode.  
+
+The NAV receiver and mode is selected as follows:
+\begin{itemize}
+\item Press 'RF' (F6) hotkey to display the RadioStack window.
+\item Press 'RF' (F6) hotkey again to select and enlarge the NAV RadioStack
+\item Press the Menu button to switch between NORMAL and SETUP mode
+\end{itemize}
+
+In NORMAL mode the following functions are available:
+\begin{table}[H]
+\caption{NAV receiver NORMAL Mode functions}
+\label{tab:nav_normal}
+\begin{tabularx}{\linewidth}{
+    |>{\hsize=0.2\hsize}X| 
+     >{\hsize=0.8\hsize}X| 
+     } 
+\hline
+Button &Function \\
+\hline
+$\downarrow$ &Allows direct entry of NAV frequency 6 digits required\\
+\hline
+$\leftarrow$ $\rightarrow$ &Flips between Primary and Secondary frequency \\
+\hline
+HOLD &Selects scanning mode: ON/OFF ("S" added when ON)\\
+\hline
+LOG &Selects Backcourse: ON/OFF ("BC" added)\\
+\hline
+\end{tabularx}
+\end{table}
+
+In SETUP mode the left/right arrows change the current setting and the up/down arrow selects the next/previous setting.  In SETUP mode the following functions are available:
+\begin{table}[H]
+\caption{NAV receiver SETUP mode functions}
+\label{tab:nav_setup}
+\begin{tabularx}{\linewidth}{
+    |>{\hsize=0.2\hsize}X| 
+     >{\hsize=0.8\hsize}X| 
+     } 
+\hline
+Button &Function \\
+\hline
+ Audio ID &1020Hz filter: ON/OFF (Off suppress morse 20dB)\\
+\hline
+ Audio Voice &1020Hz filter: ON/OFF (Off suppress voice 20dB)\\
+\hline
+ Volume &0..31 Set to 0 when not in use\\
+\hline
+ Squelch &0..31 Set to 6 normally\\
+\hline
+\end{tabularx}
+\end{table}
+
 \section{Equipment list}
 A summary of the installed equipment is provided in Table ~\ref{tab:eq_list}.  
 
