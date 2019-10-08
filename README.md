@@ -10,13 +10,13 @@ script as follows:
 ```
 Note that if you manually build the documents, you must first build the electronic version: 
 ```bash
-pdflatex --output-directory=temp zuwab.tex` % Repeat if you need to build the table of contents etc. again
+pdflatex --output-directory=temp zuwab.tex # Repeat if you need to build the table of contents etc. again
 ```
 The resulting pdf will be in `temp/zuwab.pdf`. The printable version is simply a rework of the electronic 
 version. It expects to find the base electronic version's pdf in `zuwab.pdf` so you must copy it from the
 `temp` directory first. Build the printable version like this:
 ```bash
-pdflatex --output-directory=temp zuwab-book.tex` 
+pdflatex --output-directory=temp zuwab-book.tex 
 ```
 Again, the artefact will be in `temp/zuwab-book.pdf`.
 
