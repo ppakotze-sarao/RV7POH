@@ -24,7 +24,7 @@
  \hline 
   $V_{fe20}$ & Maximum 20$^{\circ}$ flap speed & 96 kt\\ 
  \hline
- $V_{a}$ & Turbulent air operating speed & 123 kt\\ 
+ $V_{a}$ & Manoevering speed (no full or abrupt control movement) & 123 kt\\
  \hline
  $V_{no}$ & Turbulent air operating speed & 168 kt\\ 
  \hline
@@ -52,7 +52,9 @@
 %\begin{enumerate}[\circled{1}]
 \circled{1}
 \begin{enumerate}[(1)]
-\item Master and EFIS -- ON
+\item Master and EFIS (backup power) -- ON
+\item EFIS runs off backup power -- CHECK
+\item EFIS power from main -- ON
 \item Fuel gauges -- CHECK
 \item Flaps -- EXTEND FULLY
 \item Master and EFIS -- OFF
@@ -128,6 +130,11 @@
 \end{enumerate}
 
 \section{Starting Engine (Hot)}
+\begin{center}
+NOTE
+
+Do not move mixture from its FULL CLOSED position prior to a hot start.
+\end{center}
 \begin{enumerate}
   \item Mixture -- FULL LEAN
   \item Throttle -- FULL OPEN
