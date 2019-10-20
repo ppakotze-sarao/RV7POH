@@ -1,0 +1,2 @@
+# Don't mess with the CRLF on the checklist files
+*.ecl binary

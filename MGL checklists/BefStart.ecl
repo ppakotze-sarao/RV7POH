@@ -7,7 +7,6 @@ EFIS & battery backup...ON
 Avionics................OFF
 Beacon..................ON
 Fuel....................QUANTITY/SELECT
-Flaps...................RETRACT IN STAGES
 Propeller...............FULL FINE
 Prime...................AS REQUIRED
 Mixture.................CLOSED
